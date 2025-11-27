@@ -75,21 +75,21 @@ const Index = () => {
         <div className="container">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="flex flex-col items-center text-center p-6 animate-fade-in">
-              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+              <div className="h-16 w-16 rounded-full bg-[#DDE538]/20 flex items-center justify-center mb-4">
                 <Icon name="Award" className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-xl font-semibold mb-2">15+ лет опыта</h3>
               <p className="text-muted-foreground">Квалифицированные специалисты с богатым опытом</p>
             </div>
             <div className="flex flex-col items-center text-center p-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+              <div className="h-16 w-16 rounded-full bg-[#DDE538]/20 flex items-center justify-center mb-4">
                 <Icon name="Users" className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-xl font-semibold mb-2">5000+ пациентов</h3>
               <p className="text-muted-foreground">Успешно решили проблему со здоровьем</p>
             </div>
             <div className="flex flex-col items-center text-center p-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+              <div className="h-16 w-16 rounded-full bg-[#DDE538]/20 flex items-center justify-center mb-4">
                 <Icon name="ShieldCheck" className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-xl font-semibold mb-2">100% конфиденциально</h3>
@@ -110,7 +110,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card className="hover:shadow-lg transition-shadow animate-slide-up">
               <CardHeader>
-                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                <div className="h-12 w-12 rounded-lg bg-[#DDE538]/20 flex items-center justify-center mb-4">
                   <Icon name="Brain" className="h-6 w-6 text-primary" />
                 </div>
                 <CardTitle>Психогенная</CardTitle>
@@ -123,7 +123,7 @@ const Index = () => {
             </Card>
             <Card className="hover:shadow-lg transition-shadow animate-slide-up" style={{ animationDelay: "0.1s" }}>
               <CardHeader>
-                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                <div className="h-12 w-12 rounded-lg bg-[#DDE538]/20 flex items-center justify-center mb-4">
                   <Icon name="Activity" className="h-6 w-6 text-primary" />
                 </div>
                 <CardTitle>Органическая</CardTitle>
@@ -136,7 +136,7 @@ const Index = () => {
             </Card>
             <Card className="hover:shadow-lg transition-shadow animate-slide-up" style={{ animationDelay: "0.2s" }}>
               <CardHeader>
-                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                <div className="h-12 w-12 rounded-lg bg-[#DDE538]/20 flex items-center justify-center mb-4">
                   <Icon name="Blend" className="h-6 w-6 text-primary" />
                 </div>
                 <CardTitle>Смешанная</CardTitle>
