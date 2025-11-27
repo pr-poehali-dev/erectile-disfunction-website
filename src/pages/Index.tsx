@@ -34,6 +34,7 @@ const Index = () => {
             <button onClick={() => scrollToSection("treatment")} className="text-sm font-medium hover:text-primary transition-colors">Лечение</button>
             <button onClick={() => scrollToSection("doctors")} className="text-sm font-medium hover:text-primary transition-colors">Специалисты</button>
             <button onClick={() => scrollToSection("prices")} className="text-sm font-medium hover:text-primary transition-colors">Цены</button>
+            <button onClick={() => scrollToSection("reviews")} className="text-sm font-medium hover:text-primary transition-colors">Отзывы</button>
             <button onClick={() => scrollToSection("contacts")} className="text-sm font-medium hover:text-primary transition-colors">Контакты</button>
           </nav>
           <Button onClick={() => scrollToSection("contacts")}>Записаться</Button>
@@ -476,7 +477,175 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contacts" className="py-20 bg-muted/30">
+      <section id="reviews" className="py-20 bg-muted/30">
+        <div className="container">
+          <div className="text-center mb-12 animate-fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Отзывы пациентов</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Реальные истории людей, которые вернули уверенность в себе
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <Card className="animate-slide-up">
+              <CardContent className="pt-6">
+                <div className="flex items-center gap-1 mb-4">
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  "Обратился к профессору Чалому после долгих сомнений. Очень благодарен за деликатный подход и эффективное лечение. Проблема решена за 2 месяца!"
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <span className="text-sm font-semibold text-primary">АС</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">Александр С.</p>
+                    <p className="text-xs text-muted-foreground">42 года, Москва</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="animate-slide-up" style={{ animationDelay: "0.1s" }}>
+              <CardContent className="pt-6">
+                <div className="flex items-center gap-1 mb-4">
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  "Комплексный подход и современное оборудование дали результат. Врачи профессиональны, внимательны. Рекомендую всем, кто столкнулся с подобной проблемой."
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <span className="text-sm font-semibold text-primary">ДМ</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">Дмитрий М.</p>
+                    <p className="text-xs text-muted-foreground">38 лет, Санкт-Петербург</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="animate-slide-up" style={{ animationDelay: "0.2s" }}>
+              <CardContent className="pt-6">
+                <div className="flex items-center gap-1 mb-4">
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  "Важно было найти специалиста, которому можно доверять. Профессор Чалый — настоящий эксперт. Полная конфиденциальность, индивидуальный подход. Спасибо!"
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <span className="text-sm font-semibold text-primary">ВК</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">Владимир К.</p>
+                    <p className="text-xs text-muted-foreground">51 год, Москва</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="animate-slide-up" style={{ animationDelay: "0.3s" }}>
+              <CardContent className="pt-6">
+                <div className="flex items-center gap-1 mb-4">
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  "После обследования назначили комплексное лечение. Уже через месяц почувствовал улучшения. Персонал вежливый, атмосфера комфортная. Очень доволен!"
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <span className="text-sm font-semibold text-primary">ИП</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">Игорь П.</p>
+                    <p className="text-xs text-muted-foreground">45 лет, Казань</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="animate-slide-up" style={{ animationDelay: "0.4s" }}>
+              <CardContent className="pt-6">
+                <div className="flex items-center gap-1 mb-4">
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  "Современный подход к лечению, без устаревших методов. Врач подробно объяснил все этапы терапии. Результат превзошел ожидания. Рекомендую клинику!"
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <span className="text-sm font-semibold text-primary">МА</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">Михаил А.</p>
+                    <p className="text-xs text-muted-foreground">49 лет, Екатеринбург</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="animate-slide-up" style={{ animationDelay: "0.5s" }}>
+              <CardContent className="pt-6">
+                <div className="flex items-center gap-1 mb-4">
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                  <Icon name="Star" className="h-5 w-5 fill-accent text-accent" />
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  "Обращался в несколько клиник, но здесь нашел то, что нужно. Профессионализм, современное оборудование и главное — результат. Жизнь изменилась к лучшему!"
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <span className="text-sm font-semibold text-primary">СН</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">Сергей Н.</p>
+                    <p className="text-xs text-muted-foreground">55 лет, Новосибирск</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="text-center mt-12">
+            <Card className="inline-block bg-accent/10 border-accent/30">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-4">
+                  <div className="text-left">
+                    <p className="text-3xl font-bold text-primary mb-1">4.9/5.0</p>
+                    <p className="text-sm text-muted-foreground">Средняя оценка</p>
+                  </div>
+                  <div className="h-12 w-px bg-border"></div>
+                  <div className="text-left">
+                    <p className="text-3xl font-bold text-primary mb-1">500+</p>
+                    <p className="text-sm text-muted-foreground">Довольных пациентов</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" className="py-20">
         <div className="container">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Запись на прием</h2>
