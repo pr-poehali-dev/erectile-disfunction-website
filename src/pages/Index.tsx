@@ -20,9 +20,12 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Icon name="Stethoscope" className="h-6 w-6 text-primary" />
-            <span className="text-xl font-bold">МедЦентр</span>
+          <div className="flex items-center gap-3">
+            <img 
+              src="https://cdn.poehali.dev/files/cc16d68c-41af-43dd-b2e4-4410b3ed68d7.png" 
+              alt="Логотип" 
+              className="h-12"
+            />
           </div>
           <nav className="hidden md:flex gap-6">
             <button onClick={() => scrollToSection("home")} className="text-sm font-medium hover:text-primary transition-colors">Главная</button>
@@ -575,9 +578,12 @@ const Index = () => {
         <div className="container">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Icon name="Stethoscope" className="h-6 w-6 text-primary" />
-                <span className="text-xl font-bold">МедЦентр</span>
+              <div className="flex items-center gap-3 mb-4">
+                <img 
+                  src="https://cdn.poehali.dev/files/cc16d68c-41af-43dd-b2e4-4410b3ed68d7.png" 
+                  alt="Логотип" 
+                  className="h-10"
+                />
               </div>
               <p className="text-sm text-muted-foreground">
                 Профессиональное лечение эректильной дисфункции. Современные методы, опытные врачи.
